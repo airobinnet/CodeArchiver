@@ -1,0 +1,229 @@
+/* General styles */
+QMainWindow, QWidget {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+QPushButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+QPushButton:pressed {
+    background-color: #3e8e41;
+}
+
+QLineEdit {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333333;
+}
+
+QLabel {
+    color: #333333;
+}
+
+/* TreeWidget styles */
+QTreeWidget {
+    border: 1px solid #ccc;
+    background-color: white;
+    alternate-background-color: #f9f9f9;
+}
+
+QTreeWidget::item {
+    padding: 4px;
+    border: none;
+}
+
+QTreeWidget::item:selected {
+    background-color: #bde0ff;
+    color: #333333;
+}
+
+/* Checkbox styles */
+QTreeWidget::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QTreeWidget::indicator:unchecked {
+    border: 2px solid #999;
+    background-color: white;
+}
+
+QTreeWidget::indicator:checked {
+    border: 2px solid #4CAF50;
+    background-color: #4CAF50;
+}
+
+QTreeWidget::indicator:indeterminate {
+    border: 2px solid #FFA500;
+    background-color: #FFA500;
+}
+
+QTextEdit {
+    background-color: white;
+    color: #333333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QSplitter::handle {
+    background-color: #ccc;
+}
+
+QSplitter::handle:horizontal {
+    width: 4px;
+}
+
+QSplitter::handle:vertical {
+    height: 4px;
+}
+
+QHeaderView::section {
+    background-color: #e0e0e0;
+    padding: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+/* Scrollbar styles */
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 16px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #b0b0b0;
+    min-height: 30px;
+    border-radius: 7px;
+    margin: 1px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #909090;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #f0f0f0;
+    height: 16px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #b0b0b0;
+    min-width: 30px;
+    border-radius: 7px;
+    margin: 1px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #909090;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+/* FilterWidget styles */
+FilterWidget {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+FilterWidget QLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+FilterWidget QLineEdit {
+    margin-bottom: 10px;
+}
+
+FilterWidget QListWidget {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+FilterWidget QListWidget::item {
+    padding: 5px;
+}
+
+FilterWidget QListWidget::item:selected {
+    background-color: #e6f3ff;
+    color: #333333;
+}
+
+FilterWidget QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+}
+
+FilterWidget QPushButton:hover {
+    background-color: #45a049;
+}
+
+FilterWidget QPushButton:pressed {
+    background-color: #3e8e41;
+}
+
+/* Status label style */
+QLabel#status_label {
+    font-style: italic;
+    color: #666666;
+}
+
+/* Main content area */
+QSplitter {
+    background-color: #f0f0f0;
+}
+
+/* Output text area */
+QTextEdit#output_text {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.4;
+}
